@@ -1,0 +1,39 @@
+package stefi;
+import java.util.*; 
+class overload
+{
+    void area(float x)
+    {
+        System.out.println("The area of the square is "+x*x);
+    }
+    void area(float x, float y)
+    {
+        System.out.println("The area of the rectangle is "+x*y);
+    }
+    void area(double x)
+    {
+        double z = 3.14 * x * x;
+        System.out.println("The area of the circle is "+z);
+    }
+}
+class Q1overload
+{
+	
+     public static void main(String args[]) 
+	{
+    	 Scanner r= new Scanner (System.in);
+    	 float m,n,o,p;
+    	 System.out.println("Enter side of square");
+    	 m=r.nextFloat();
+    	 System.out.println("Enter length of Rectangle");
+    	 n=r.nextFloat();
+    	 System.out.println("Enter breadth of rectangle");
+    	 o=r.nextFloat();
+    	 System.out.println("Enter radius of circle");
+    	 p=r.nextFloat();
+    	 overload ob = new overload();
+	   ob.area(m);
+	   ob.area(n,o);
+	   ob.area(p);
+        }
+}
