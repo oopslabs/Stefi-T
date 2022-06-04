@@ -16,7 +16,7 @@ public class co3_pg7{
 			case 1: System.out.println("Enter product id");
 					id=in.nextInt();
 					System.out.println("Enter the product name");
-					in.nextLine();
+					
 					name=in.nextLine();
 					System.out.println("Enter product quantity");
 					qty=in.nextInt();
