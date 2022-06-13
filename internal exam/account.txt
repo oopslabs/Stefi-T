@@ -1,0 +1,36 @@
+package stefi;
+import java.util.*;
+class account 
+{
+	 public static void main(String args[])
+	 {
+	int m,b;
+	int balance=0;
+Scanner sc=new Scanner(System.in);
+
+System.out.println("Enter the amount to deposit:");
+m=sc.nextInt();
+balance=balance+m;
+System.out.println("Balance amount is:"+balance);
+System.out.println("Enter the amount to withdraw:");
+b=sc.nextInt();
+try
+{
+	if(b<balance)
+	{
+		System.out.println("suucessfully retrived");
+	}
+	else
+	{
+		throw new UserDefinedException("error");
+	}
+}
+	catch(UserDefinedException e)
+{
+		System.out.println("no sufficient balance found");
+}
+}	
+}
+
+
+

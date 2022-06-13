@@ -1,0 +1,67 @@
+package stefi;
+import java.util.Scanner;
+
+class box1 
+{
+	int l,b;
+box1()
+{
+	System.out.println("Enter the length:");
+	Scanner sc=new Scanner(System.in);
+	l=sc.nextInt();
+	System.out.println("Enter the breadth:");
+	b=sc.nextInt();
+	}
+}
+
+class box3d extends box1
+{
+	 
+	
+	
+	
+	box3d()
+	{
+	 super();
+	 
+	 
+
+	}
+	 void area()
+	{
+		 System.out.println("enter the height");
+		 Scanner sc=new Scanner(System.in);
+		 int h=sc.nextInt();
+		System.out.println(l);
+		int area=(l*b)+(l*h)+(b*h);
+		System.out.println("Area="+area);
+		 
+		
+		
+		
+		
+		
+		int v=l*b*h;
+		System.out.println("volume="+v);
+		
+	}
+	 void volume()
+	{
+		 
+		 
+			int v=l*b;
+			System.out.println("volume="+v);
+	}
+}
+class inheritance
+{
+	 public static void main(String args[])
+	 {
+		box3d b1=new box3d();
+		b1.area();
+		
+		
+	 }
+}
+ 
+
