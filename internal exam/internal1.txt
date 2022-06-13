@@ -41,9 +41,6 @@ class box3d extends box1
 		
 		
 		
-		int v=l*b*h;
-		System.out.println("volume="+v);
-		
 	}
 	 void volume()
 	{
@@ -59,7 +56,7 @@ class inheritance
 	 {
 		box3d b1=new box3d();
 		b1.area();
-		
+		b1.volume();
 		
 	 }
 }
